@@ -6,7 +6,29 @@ using System.Threading.Tasks;
 
 namespace JeuPersonnages.Modeles
 {
-    internal class Paysan
+    public class Paysan
     {
+        #region Attributs
+        #endregion
+
+        #region Constructeurs
+
+        public Paysan()
+        {
+        }
+
+        #endregion
+
+        #region Propriétés
+        #endregion
+
+        #region Méthodes
+
+        public void Marcher()
+        {
+            Console.WriteLine("Le paysan marche avec sa fourche sur l'épaule.");
+        }
+
+        #endregion
     }
 }
