@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JeuPersonnages.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace JeuPersonnages.Modeles
 {
-    public class Guerrier
+    public class Guerrier : IHumain
     {
         #region Attributs
         #endregion
