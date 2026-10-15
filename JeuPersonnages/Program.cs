@@ -33,14 +33,28 @@ namespace JeuPersonnages
             Console.Write("Votre choix : ");
             string choix = Console.ReadLine();
             // Création des trois personnages.
-            personnage = new Guerrier();
-            personnage = new Magicien();
-            personnage = new Paysan();
+            if (choix == "1")
+            {
+                personnage = new Guerrier();
+            }
+            else if (choix == "2")
+            {
+                personnage = new Magicien();
+            }
+            else if (choix == "3")
+            {
+                personnage = new Paysan();
+            }
+            else
+            {
+                Console.WriteLine("Ce choix n'existe pas.");
+                Console.ReadLine();
+                return;
+            }
 
             // Chaque personnage marche à sa manière.
             personnage.Marcher();
-            personnage.Marcher();
-            personnage.Marcher();
+
 
             // Attendre avant de fermer la console.
             Console.ReadLine();
