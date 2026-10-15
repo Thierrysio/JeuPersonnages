@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dependances\Jeu.cs" />
     <Compile Include="Interfaces\IHumain.cs" />
     <Compile Include="Modeles\Guerrier.cs" />
     <Compile Include="Modeles\Magicien.cs" />

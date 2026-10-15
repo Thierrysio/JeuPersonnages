@@ -1,4 +1,5 @@
-﻿using JeuPersonnages.Interfaces;
+﻿using JeuPersonnages.Dependances;
+using JeuPersonnages.Interfaces;
 using JeuPersonnages.Modeles;
 using System;
 using System.Collections.Generic;
@@ -52,8 +53,11 @@ namespace JeuPersonnages
                 return;
             }
 
-            // Chaque personnage marche à sa manière.
-            personnage.Marcher();
+            // On fournit le personnage choisi au jeu.
+            Jeu jeu = new Jeu(personnage);
+
+            // Le jeu utilise le personnage reçu.
+            jeu.Jouer();
 
 
             // Attendre avant de fermer la console.
