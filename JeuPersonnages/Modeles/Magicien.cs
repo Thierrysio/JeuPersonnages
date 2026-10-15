@@ -6,7 +6,30 @@ using System.Threading.Tasks;
 
 namespace JeuPersonnages.Modeles
 {
-    internal class Magicien
+    public class Magicien
     {
+        #region Attributs
+        #endregion
+
+        #region Constructeurs
+
+        public Magicien()
+        {
+        }
+
+        #endregion
+
+        #region Propriétés
+        #endregion
+
+        #region Méthodes
+
+        public void Marcher()
+        {
+            Console.WriteLine("Le magicien marche en s'appuyant sur son bâton.");
+        }
+
+        #endregion
     }
+
 }
